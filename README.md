@@ -51,6 +51,8 @@ npm install
 ```
 token_1
 token_2
+![image](https://github.com/user-attachments/assets/2e57c61c-5ad7-4262-aae8-5e17c23366b7)
+
 ...
 ```
 
