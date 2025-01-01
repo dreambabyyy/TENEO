@@ -98,3 +98,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Disclaimer
 
 This tool is for educational purposes only. Use at your own risk and responsibility.
+
+
+## TRAKTER
+EVM : 0x59883db349d0baf6d3de4b17bea28845c007da9f 
+SOL : 9GgUqQsKR2548QLmyetaszScL8LFjkGtT98ggk1Bomfg
