@@ -22,7 +22,7 @@ An automated WebSocket client for managing multiple Teneo accounts in parallel.
 
 ```bash
 git clone https://github.com/dreambabyyy/TENEO.git
-cd Teneosupmulty
+cd TENEO
 ```
 
 2. Install dependencies:
