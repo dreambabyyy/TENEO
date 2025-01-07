@@ -65,3 +65,6 @@ Pastikan Anda telah menginstal Python3.9 dan PIP.
 python bot.py #or python3 bot.py
 ```
 
+## My Channel Tele Super BianzZz
+
+  https://t.me/superbianz
