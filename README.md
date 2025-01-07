@@ -1,106 +1,67 @@
-# Teneo WebSocket Bot
+# Teneo Community Node BOT
+Teneo Community Node BOT
 
-An automated WebSocket client for managing multiple Teneo accounts in parallel.
+Download Extension Here : [Teneo Community Node](https://chromewebstore.google.com/detail/teneo-community-node/emcclcoaglgcpoognfiggmhnhgabppkm) | Use Code : F5mxY
 
-## Features
+## Fitur
 
-- Multi-account support
-- Automatic ping and reconnection
-- Clean and organized logging
-- Easy account management
-- Colorful console output
+  - Auto Get Account Information
+  - Auto Run With Auto Proxy if u Choose 1 [Use [Monosans Proxy](https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt)]
+  - Auto Run With Manual Proxy if u Choose 2 [Paste Ur personal proxy in manual_proxy.txt]
+  - Auto Run Without Proxy if u Choose 3
+  - Auto Connect Node and Send Ping
+  - Auto Receive Message Every 15 Minutes
+  - Multi Accounts With Threads
 
-## Prerequisites
+## Prasyarat
 
-- Node.js (version 14 or higher)
-- npm (Node Package Manager)
-- Teneo browser extension with registration code: `VixZZ`
+Pastikan Anda telah menginstal Python3.9 dan PIP.
 
-## Installation
+## Instalasi
 
-1. Clone this repository:
+1. **Kloning repositori:**
+   ```bash
+      https://github.com/dreambabyyy/TENEO.git
+   ```
+   ```bash
+   cd TENEO
+   ```
+
+2. **Instal Requirements:**
+   ```bash
+   pip install -r requirements.txt #or pip3 install -r requirements.txt
+   ```
+
+## Konfigurasi
+
+- **accounts.json:** Anda akan menemukan file `accounts.json` di dalam direktori proyek. Pastikan `accounts.json` berisi data yang sesuai dengan format yang diharapkan oleh skrip. Berikut adalah contoh format file:
+
+  ```bash
+    [
+        {
+            "Email": "your_email_address 1",
+            "Password": "your_password 1"
+        },
+        {
+            "Email": "your_email_address 2",
+            "Password": "your_password 2"
+        }
+    ]
+  ```
+- **manual_proxy.txt:** Anda akan menemukan file `manual_proxy.txt` di dalam direktori proyek. Pastikan `manual_proxy.txt` berisi data yang sesuai dengan format yang diharapkan oleh skrip. Berikut adalah contoh format file:
+  ```bash
+    ip:port #http or socks5 - change schemes in line 100
+    http://ip:port
+    socks4://ip:port
+    socks5://ip:port
+    http://ip:port@user:pass #idk its work or not, cuase i don't have authentic proxy
+    socks4://ip:port@user:pass #idk its work or not, cuase i don't have authentic proxy
+    socks5://ip:port@user:pass #idk its work or not, cuase i don't have authentic proxy
+  ```
+
+## Jalankan
 
 ```bash
-git clone https://github.com/dreambabyyy/TENEO.git
-cd TENEO
+python bot.py #or python3 bot.py
 ```
 
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-## Configuration
-
-### Getting JWT Token
-
-1. Install Teneo browser extension
-2. Register using code: `F5mxY`
-3. Open extension
-4. Right click > Inspect
-5. Click Disconnect then Connect
-6. Go to WS tab
-7. Find and copy the value from the payload section
-
-### Setting Up Accounts
-
-1. Edit `data.txt` file in the root directory
-2. Add accessToken (one per line) for each account
-
-```
-token_1
-token_2
-
-...
-
-```
-![image](https://github.com/user-attachments/assets/2e57c61c-5ad7-4262-aae8-5e17c23366b7)
-## Usage
-
-Run the bot:
-
-```bash
-node main.js
-```
-
-The bot will:
-
-- Display a welcome banner
-- Connect to all accounts in parallel
-- Send pings every 10 seconds
-- Show real-time points updates
-- Automatically reconnect on disconnection
-
-## Features Details
-
-### Auto-Reconnection
-
-- Maximum 5 reconnection attempts
-- Exponential backoff delay
-- Maximum delay of 30 seconds
-
-### Error Handling
-
-- WebSocket connection errors
-- Message parsing errors
-- File reading errors
-- Graceful shutdown on CTRL+C
-
-## Contributing
-
-Feel free to submit issues and enhancement requests.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Disclaimer
-
-This tool is for educational purposes only. Use at your own risk and responsibility.
-
-
-## TRAKTER
--- EVM : 0x59883db349d0baf6d3de4b17bea28845c007da9f 
-
--- SOL : 9GgUqQsKR2548QLmyetaszScL8LFjkGtT98ggk1Bomfg
